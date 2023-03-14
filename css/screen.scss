@@ -100,8 +100,8 @@ $ms9: calc($ms8 * $ratio); // 52px
 $ms10: calc($ms9 * $ratio); // 58px
 $ms11: calc($ms10 * $ratio); // 66px
 
-$font-family-primary: "Helvetica Neue", Helvetica, arial, sans-serif;
-$font-family-secondary: "Times New Roman", Times, serif;
+$font-family-primary: 'Helvetica Neue', Helvetica, arial, sans-serif;
+$font-family-secondary: 'Times New Roman', Times, serif;
 
 /*
     Settings: Spacing
@@ -133,7 +133,7 @@ $space-xxxl: calc($space-xl * 2); // 96px
 
 * {
   // Reset margin and font-size and font-weight
-  margin:0;
+  margin: 0;
   font-size: 100%;
   font-weight: normal;
 }
@@ -156,6 +156,9 @@ img {
 */
 
 html {
+  font-size: calc($root-font-size/16 * 100%);
+  line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -163,6 +166,7 @@ html {
 */
 
 ::selection {
+  /*color when select with mouse*/
 }
 
 /*
@@ -172,6 +176,7 @@ html {
 */
 
 h1 {
+
 }
 
 h2 {
